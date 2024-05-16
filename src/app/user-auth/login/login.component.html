@@ -1,0 +1,44 @@
+<div class="LoginCard">
+  <h2>Login Here!</h2>
+  <form #loginForm="ngForm" (ngSubmit)="getData(loginForm.value)">
+    <input
+      ngModel
+      class="inputStyle"
+      type="text"
+      name="username"
+      id="username"
+      placeholder="@username = admin"
+    />
+    <input
+      ngModel
+      class="inputStyle"
+      type="password"
+      name="password"
+      id="password"
+      placeholder="password = 1234"
+    />
+    <a routerLink="users" class="btnStyle">Submit</a>
+  </form>
+  <!-- <input
+    class="inputStyle"
+    type="text"
+    name="username"
+    id="username"
+    placeholder="@username = admin"
+    (input)="getUsername($event)"
+  />
+  <input
+    class="inputStyle"
+    type="password"
+    name="password"
+    id="password"
+    placeholder="password = 1234"
+    (input)="getPassword($event)"
+  />
+  <ng-template [ngIf]="username === 'admin' && password === '1234'">
+    <button class="btnStyle">Submit</button>
+  </ng-template> -->
+
+  <h1></h1>
+  <h1></h1>
+</div>
